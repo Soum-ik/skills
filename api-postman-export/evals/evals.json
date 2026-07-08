@@ -1,0 +1,23 @@
+{
+  "skill_name": "api-postman-export",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Scan this Express.js project and export all API endpoints as a Postman collection I can import. Include test scripts for each request.",
+      "expected_output": "postman/*.postman_collection.json valid v2.1 format with folders per resource, {{baseUrl}} variables, test scripts on each request, and docs/api-reference.md with curl examples",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What APIs do we have in this codebase? Document them and give me a Postman collection file.",
+      "expected_output": "Complete endpoint inventory in markdown plus importable Postman collection JSON passing validate_collection.py",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We have an openapi.yaml but I'm not sure it's up to date. Cross-check against the code and generate a Postman collection with realistic example payloads and auth setup.",
+      "expected_output": "Postman collection with Auth folder, bearer token variable, discrepancy notes in api-reference.md, saved response examples per endpoint",
+      "files": []
+    }
+  ]
+}
